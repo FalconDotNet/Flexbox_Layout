@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <styles>
+            <link href="css/cssreset.css" rel="stylesheet">
+            <link href="css/app.css" rel="stylesheet">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+            <style rel="stylesheet">
+                .alt-bg {
+                    margin: 10px;
+                    padding: 10px;
+                }
+                .alt1-bg {
+                    background: #FFDDDD;
+                    margin: 10px;
+                    padding: 10px;
+                }
+            </style>
+        </styles>
+        <title>Layout: Stacks</title>
+    </head>
+    
+    <header>
+        <div style="width: 100%; max-height: 100px; display: flex; flex-direction: column-reverse; align-items: center;">
+            <div>
+                <a href="index.html" target="_self"><h4 style="display: inline;">Home</h4></a>&nbsp;|&nbsp;
+                <a href="Layout1.html" target="_self"><h4 style="display: inline;">Layout: Stacks</h4></a>&nbsp;|&nbsp;
+                <a href="Layout2.html" target="_self"><h4 style="display: inline;">Layout: Two</h4></a>&nbsp;|&nbsp;
+                <a href="Layout3.html" target="_self"><h4 style="display: inline;">Layout: Test</h4></a>&nbsp;|&nbsp;
+                <a href="Gallery.html" target="_self"><h4 style="display: inline;">Gallery</h4></a>
+            </div>
+            <div style='width: 100%;'>
+                <div style='width: 100%;'>
+                    <h1>Layout: Stacks</h1>
+                </div> 
+            </div>
+        </div>
+    </header>
+
+    <body style="position: absolute; top: 103px; bottom: 0; left: 0; right: 0;">
+        <div style="display: flex; flex-wrap: nowrap;">
+            <div style="flex: 1 1 10%;"></div>
+            <div style="flex: 1 0 80%; text-align: center; min-width: 250px; max-width: 800px; background: #eeffff;">
+
+                <div style="display: flex; flex-wrap: nowrap;">
+                    <div style="flex: 1 0 30%; margin: 5px;">
+                        <img style="max-width: 100%; max-height: 100%;" src="images\Movie.jpg"/>
+                    </div>
+                    <div style="flex: 1 1 70%; margin: 5px; text-align: left;">
+                        <p>Some text to go here. Some text to go here. Some text to go here. Some text to go here. Some text to go here. Some  text to go here. Some text to go here. Some text to go here. Some text to go here. Some text to go here.</p>
+                    </div>
+                </div>
+
+                <div style="display: flex; flex-wrap: nowrap;">
+                    <div style="flex: 1 1 70%; margin: 5px; text-align: left;">
+                        <p>Some text to go here. Some text to go here. Some text to go here. Some text to go here. Some text to go here. Some  text to go here. Some text to go here. Some text to go here. Some text to go here. Some text to go here.</p>
+                    </div>
+                    <div style="display:flex; flex: 1 0 30%; margin: 5px; align-items: center;">
+                        <img style="max-width: 100%; max-height: 100%;" src="images\Rambo.jpg"/>
+                    </div>
+                </div>
+            </div>
+            <div style="flex: 1 1 10%;"></div>        
+        </div>
+    </body>
+</html>
